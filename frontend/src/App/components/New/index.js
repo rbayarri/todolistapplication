@@ -13,7 +13,6 @@ const New = (props) => {
     await fetch(`/tasks/create/${newName}/${props.folder}`);
     await props.action();
     setNewName("");
-    //ruta a FolderTasks
   }
 
   return (
@@ -32,7 +31,7 @@ const New = (props) => {
           />
           <button
             className="btn btn-sm btn-success btn-folder"
-            disabled={newName===""}
+            disabled={newName === ""}
             onClick={
               props.type === "Folder"
                 ? handleClickButtonFolder
