@@ -38,7 +38,7 @@ CREATE DATABASE todoapplication;
 Update file application.properties with your mysql credentials.
 
 
-**Step 2: Run the project**
+**Step 3: Run the project**
 ```
 cd backend
 mvn spring-boot:run
